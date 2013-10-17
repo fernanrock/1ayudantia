@@ -1,0 +1,129 @@
+\documentclass[10pt]{article} 
+
+\usepackage[utf8]{inputenc}
+
+\usepackage{geometry}
+\geometry{letterpaper} 
+
+\usepackage[spanish]{babel} % Permite utilizar español
+\usepackage{graphicx} % support the \includegraphics command and options
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
+\usepackage{wrapfig}
+\usepackage{float}
+\usepackage{verbatim} % adds environment for commenting out blocks of text & for better verbatim
+
+%\usepackage{booktabs}
+%\usepackage{array}
+\usepackage{subfig}
+
+\usepackage{fancyhdr} % This should be set AFTER setting up the page geometry
+\pagestyle{fancy} % options: empty , plain , fancy
+\renewcommand{\headrulewidth}{0pt} % customise the layout...
+\lhead{}\chead{}\rhead{}
+\lfoot{}\cfoot{\thepage}\rfoot{}
+
+
+\usepackage{sectsty}
+\allsectionsfont{\sffamily\mdseries\upshape} 
+
+\usepackage[nottoc,notlof,notlot]{tocbibind} % Put the bibliography in the ToC
+\usepackage[titles,subfigure]{tocloft} % Altera el estilo del  indice
+\usepackage{amsmath}
+
+
+\begin{document}
+
+
+\begin{titlepage}
+\begin{center}
+\includegraphics[width=0.15\textwidth]{Utem}~\\[1cm]
+
+\textsc{\normalsize Universidad Tecnológica Metropolitana}\\[1.5cm]
+
+\textsc{\ Trabajo 1 Ayudantia }\\[0.5cm]
+
+% Title
+\HRule \\[0.4cm]
+{ \huge \bf Metodologias de desarrollo de software}\\[0.4cm]
+
+\HRule \\[1.5cm]
+\textsc{\large Fernando Guerrero Muñoz , David Muñoz Muñoz}\\[1cm]
+\textsc{\large Profesor: Luis Herrera}\\
+\textsc{\large Ayudante: Guillermo Rojas}\\
+\end{center}
+\end{titlepage}
+
+%\tableofcontents Esto Crea el Indice
+\newpage
+
+\section{Metodología Scrum}
+
+Scrum es una metodología ágil de gestión de proyectos cuyo objetivo primordial es elevar al máximo la productividad de un equipo. Reduce al máximo la burocracia y actividades no orientadas a producir software que funcione y produce resultados en periodos muy breves de tiempo. 
+
+Como método, Scrum enfatiza valores y prácticas de gestión, sin pronunciarse sobre requerimientos, prácticas de desarrollo, implementación y demás cuestiones técnicas, más bien delega completamente en el equipo la responsabilidad de decidir la mejor manera de trabajar para ser lo más productivos posibles. Toma el cambio como una forma de entregar al final del desarrollo algo más cercano a la verdadera necesidad del Cliente. Puede ser aplicado teóricamente a cualquier contexto en donde un grupo de gente necesita trabajar junta para lograr una meta común.
+
+\subsection{Resumen:}
+\begin{itemize}
+
+
+\item Gestionar  proyectos, no contiene definiciones en áreas de ingeniería, el trabajo es efectuado por equipos auto-organizados y auto-dirigidos, logrando motivación, responsabilidad y compromiso. 
+\item Está basada en un proceso constructivo iterativo e incremental donde las iteraciones tienen duración fija.
+\item Contiene definición de roles, prácticas y productos de trabajo escritas de forma simple.
+\item Está soportada en un conjunto de valores y principios.
+\end{itemize}
+
+
+\newpage
+\section{Metodología Cascada}
+
+
+El más conocido, está basado en el ciclo convencional de una ingeniería. El paradigma del ciclo de vida abarca las siguientes actividades:
+\begin{itemize}
+\item Ingeniería y Análisis del Sistema: Comienza estableciendo los requisitos de todos los elementos del sistema y luego asignando algún subconjunto de estos requisitos al software.
+\item Análisis de los requisitos del software: En la recopilación de los requisitos se centra e intensifica especialmente en el software. El ingeniero de software (Analistas) debe comprender el ámbito de la información del software, así como la función, el rendimiento y las interfaces requeridas.
+\item Diseño: El proceso de diseño traduce los requisitos en una representación del software con la calidad requerida antes de que comience la codificación. El diseño del software se enfoca en cuatro atributos distintos del programa: la estructura de los datos, la arquitectura del software, el detalle procedimental y la caracterización de la interfaz. 
+\item Codificación: Traducirse en una forma legible para la máquina. El paso de codificación realiza esta tarea. Si el diseño se realiza de una manera detallada la codificación puede realizarse mecánicamente.
+\item Prueba: Se centra en la lógica interna del software, y en las funciones externas, realizando pruebas que aseguren que la entrada definida produce los resultados que realmente se requieren.
+\item Mantenimiento: El software sufrirá cambios después de que se entrega al cliente. Los cambios ocurrirán debido a que hayan encontrado errores, a que el software deba adaptarse a cambios del entorno externo (sistema operativo o dispositivos periféricos), o debido a que el cliente requiera ampliaciones funcionales o del rendimiento. 
+
+\end{itemize}
+
+\subsection{Ventajas y Desventajas}
+\begin{itemize}
+\item 	Los proyectos reales raramente siguen el flujo secuencial que propone el modelo, siempre hay iteraciones y se crean problemas en la aplicación del paradigma.
+\item 	Normalmente, es difícil para el cliente establecer explícitamente al principio  todos los requisitos. El ciclo de vida clásico lo requiere y tiene dificultades en acomodar posibles incertidumbres que pueden existir al comienzo de muchos productos.
+\item 	El cliente debe tener paciencia. Hasta llegar a las etapas finales del proyecto, no estará disponible una versión operativa del programa. Un error importante no detectado hasta que el programa esté funcionando puede ser desastroso.
+\item La ventaja de este método radica en su sencillez ya que sigue los pasos intuitivos necesarios a la hora de desarrollar el software
+\end{itemize}
+
+
+
+
+\newpage
+\section{Comparacion}
+acá va la tabla
+
+\begin{tabular}{|lc|l|} \hline
+\multicolumn{1}{|p{5cm}|}{\centering %
+Metodologia Scrum} & \multicolumn{1}{|p{5cm}|}{\centering % 
+Metodologia cascada} \tabularnewline \hline
+ • Gestionar  proyectos, no contiene definiciones\\ 
+en áreas de ingeniería, el trabajo es efectuado\\ 
+por equipos auto-organizados y auto-dirigidos, \\
+logrando motivación, responsabilidad y compromiso.  &  Los proyectos reales raramente siguen el flujo secuencial\\
+que propone el modelo, siempre hay iteraciones\\
+y se crean problemas en la aplicación del paradigma \\
+ • Venus & 108.3 \\ 
+ • Tierra & 150.0 \\ \hline
+\end{tabular}
+
+
+
+
+
+\section{Anexo}
+
+
+
+
+\end{document}
